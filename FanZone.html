@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marracashsite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Logo -->
+        <link rel="icon" href="Img/finitaLaPace.jpg" type="image/png">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <!-- Per icone -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container-fluid bg-none">
+                <div class="row">
+                    <div class="col-sm-12 justify-content-center text-center">
+                        <div class="logo-container p-5">
+                            <img src="./Img/logo.png" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <h2 class="mb-0"><a class="navbar-brand" style="color: #7A0E0E;" href="Marracashsite.html">MΛRRΛCΛ$H</a></h2>
+
+                    <!-- Bottone Hamburger -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menu Collapse -->
+                    <div class="collapse navbar-collapse" id="navBar">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="Marracashsite.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Discografia.html">Discografia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Merch.html">Merch</a></li>
+                            <li class="nav-item"><a class="nav-link" href="FanZone.html">FanZone</a></li>
+                            <li class="nav-item dropdown"><a class="no-effect nav-link dropdown-toggle" href="#" id="contradaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="ca dropdown-item" href="Interviste.html">Interviste</a></li>
+                                    <li><a class="ca dropdown-item" href="RocciaMusic.html">Roccia Music</a></li>
+                                    <li><a class="dropdown-item" href="#">News</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Accesso.html">Λccedi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Barra Ricerca -->
+                    <form class="d-flex mb-0">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Cerca..." aria-label="Cerca">
+                            <button class="btn btn-primary rounded-start-0" type="submit" style="font-family: 'Neue Haas Grotesk', sans-serif; font-weight: 600;">Cerca</button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <nav class="m-3" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="Marracashsite.html">Home</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="FanZone.html">FanZone</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dediche</li>
+            </ol>
+        </nav>
+
+        <main class="container py-3">
+            <!-- FILTRI -->
+            <div class="text-center mb-4">
+                <button class="btn btn-primary mx-2" onclick="showCategory('FotoFan')">Foto Fan</button>
+                <button class="btn btn-secondary mx-2" disabled="">Fan Art</button>
+                <button class="btn btn-primary mx-2" onclick="showCategory('Dediche')">Dediche</button>
+                <button class="btn btn-secondary mx-2" disabled="">Remix Fan</button>
+                <button class="btn btn-secondary mx-2" disabled="">Tattoo Fan</button>
+                <button class="btn btn-secondary mx-2" disabled="">Forum</button>
+                <button class="btn btn-secondary mx-2" disabled="">Outfits</button>
+                <button class="btn btn-secondary mx-2" disabled="">Interpretazioni</button>   
+            </div>
+            <!-- Foto Fan -->
+            <div id="FotoFan" class="category-section d-none">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="Img/foto1.jpg" class="card-img-top" alt="foto1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">@federicamarra94</h5>
+                                <p class="card-text">Mai visto un live così intenso. Quando ha cantato Crudelia, mi sono venuti i brividi. Grazie Marra 🙌</p>
+                                <button class="btn btn-primary">Interagisci</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Img/foto2.jpg" class="card-img-top" alt="foto2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">@andrealiveking</h5>
+                                <p class="card-text">Roma in delirio. Luci, testi, presenza scenica: Marracash è una macchina da guerra sul palco 🔥👑</p>
+                                <button class="btn btn-primary">Interagisci</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Img/foto3.jpeg" class="card-img-top" alt="foto3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">@giuly_x</h5>
+                                <p class="card-text">Ogni canzone un pugno allo stomaco, ma anche una carezza. Persona dal vivo è tutta un’altra cosa 💔✨</p>
+                                <button class="btn btn-primary">Interagisci</button>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <!-- Dediche -->
+            <div id="Dediche" class="category-section">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Img/foto1.jpg" class="card-img-top rounded-circle mx-auto d-block m-4" alt="Ut Foto" style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">@simo_versoest</h5>
+                                <p class="card-text">Non ti conosco di persona, ma con ogni rima sembri leggermi dentro. Sei più di un artista, sei una voce.</p>
+                                <a class="btn btn-primary" href="Interagisci.html">Interagisci</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Img/foto2.jpg" class="card-img-top rounded-circle mx-auto d-block m-4" alt="Ut Foto" style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center">@marrafanxx</h5>
+                                <p class="card-text text-center">Le tue parole mi hanno aiutato nei momenti peggiori. Nei tuoi testi ho trovato forza e verità. Grazie davvero.</p>
+                                <button class="btn btn-primary">Interagisci</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="Img/foto3.jpeg" class="card-img-top rounded-circle mx-auto d-block m-4" alt="Ut Foto" style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="card-body  text-center">
+                                <h5 class="card-title">@vale.blu</h5>
+                                <p class="card-text">Ogni tuo album è un viaggio. E io li ho percorsi tutti, testa bassa e cuore aperto. Continua a raccontarci la tua verità.</p>
+                                <button class="btn btn-primary">Interagisci</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginazione -->
+            <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Precedente</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Successivo</a></li>
+                </ul>
+            </nav>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <section class="container-fluid text-light py-3 bg-dark">
+                <div class="text-center m-4">
+                    <img class="img-fluid" style="width: 10%;" src="Img/firma.png" alt="Firma Marracash">
+                </div>
+                <div class="row">
+                    <!-- DISCLAIMER -->
+                    <div class="col-md-6 mb-3 text-center">
+                        <p class="mb-2">
+                            Tutti i diritti relativi ai contenuti di questo sito, inclusi nomi, immagini, testi e altri materiali, 
+                            appartengono ai rispettivi autori e/o case editrici e sono protetti dalle leggi 
+                            internazionali sul copyright e sui marchi registrati.
+                        </p>
+                        <p class="mb-0">
+                            Questo progetto è di natura puramente amatoriale, privo di qualsiasi scopo di lucro da parte dell'autore e non affiliato nè dipendente da alcuna casa editrice.
+                        </p>
+                    </div>
+                    <!-- SOCIAL -->                                                                                     
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3">Seguici</h5>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    <!-- LINK -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3">Link Utili</h5>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Credits</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Web Project Plan</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Informazioni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>    
+    </body>
+</html>

@@ -1,0 +1,210 @@
+body {
+    background-color: #f6f5f1;
+    font-family: 'Neue Haas Grotesk', sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    background-image: url(./Img/MARRA1.jpg);
+    background-size: cover;
+}
+
+/* Stlie font NavBar */
+li {
+    font-family: 'Neue Haas Grotesk', sans-serif;
+    font-weight: 600;
+}
+
+/* Stile Logo */
+h2 {
+    font-family: 'Neue Haas Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+/* Animazione elementi li */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #7A0E0E;
+}
+.nav-link:not(.no-effect)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: #7A0E0E;
+    transition: transform 0.3s ease;
+}
+.nav-link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+.nav-link:hover {
+    color: #7A0E0E !important;
+}
+
+/* Stile Dropdown */
+.dropdown-menu {
+    background-color: #7A0E0E;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0;
+    border: none;
+}
+.dropdown-item {
+    font-family: 'Neue Haas Grotesk', sans-serif;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+.dropdown-item:hover {
+    background-color: #7a3838;
+    color: white;
+}
+.dropdown-item:not(.ca):hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Stile Hamburger */
+.navbar-toggler {
+    border: 2px solid #7A0E0E;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%237A0E0E' viewBox='0 0 30 30'%3e%3cpath stroke='%237A0E0E' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3e%3c/svg%3e");
+}
+
+/* Stile Bottoni */
+.btn {
+    background-color: #7A0E0E;
+    border: none;
+    color: white;
+}
+.btn:hover {
+    background-color: #7a3838;
+    color: white;
+}
+.btn:focus {
+    background-color: #7A0E0E !important;
+    color: white !important;
+    transition: background-color 0.3s ease !important;
+}
+.btn:focus:hover {
+    background-color: #7a3838 !important;
+    transition: background-color 0.3s ease !important;
+}
+
+
+/* Stile Collegamento Modale 1 */
+#modal1 {
+    color: #7A0E0E;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Stile Scopri Tappe */
+#scopri {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #7A0E0E;
+    border-radius: 0%;
+    color: #7A0E0E;
+}
+#scopri:hover {
+    border-bottom: 3px solid #7a3838;
+    color: #7a3838;
+    font-size: 1.005em;
+}
+
+/* Stile Discografia Breadcrumb */
+.breadcrumb-item-link {
+    color: #7A0E0E;
+    text-decoration: none;
+}
+.breadcrumb-item-link:hover {
+    color: #7a3838;
+}
+
+/* Stile Accordion */
+.accordion-button {
+    color: #7A0E0E;
+}
+.accordion-button:hover {
+    color: #7a3838;
+    background-color: #e9ecef;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+    color: #7a3838;
+    box-shadow: none;
+    outline: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+.form-check-input:checked {
+    background-color: #7a3838;
+    border-color: #7a3838;
+    box-shadow: none;
+    outline: none;
+}
+.form-check-input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #e9ecef;
+}
+
+/* Stile Cards */
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Stile Navigazione Pagine */
+.pagination .page-link {
+    color: #7A0E0E;
+    border-color: #7A0E0E;
+}
+.pagination .page-link:hover, .pagination .page-item.active .page-link {
+    background-color: #7A0E0E; 
+    border-color: #7A0E0E;
+    color: white;
+}
+.pagination .page-link:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Like Button */
+.like {
+    transition: background-color 0.3s ease !important;
+}
+.like i {
+    transition: color 0.3s ease, transform 0.3s ease !important;
+}
+.like:hover {
+    background-color: #7A0E0E !important;
+}
+.like:hover i {
+    color: white !important;
+    transform: scale(1.2) !important;
+}
+
+/* Stile Carousel Button */
+.carousel-control-prev, .carousel-control-next {
+    background-color: #7A0E0E;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    transform: scale(1.5);
+}

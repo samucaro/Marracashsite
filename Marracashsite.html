@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <title>Marracashsite</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Logo -->
+        <link rel="icon" href="Img/finitaLaPace.jpg" type="image/png">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <!-- Per icone -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid bg-none">
+                <div class="row">
+                    <div class="col-sm-12 justify-content-center text-center">
+                        <div class="logo-container p-5">
+                            <img src="./Img/logo.png" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <h2 class="mb-0"><a class="navbar-brand" style="color: #7A0E0E;" href="Marracashsite.html">MΛRRΛCΛ$H</a></h2>
+
+                    <!-- Bottone Hamburger -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Menu Collapse -->
+                    <div class="collapse navbar-collapse" id="navBar">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="Marracashsite.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Discografia.html">Discografia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Merch.html">Merch</a></li>
+                            <li class="nav-item"><a class="nav-link" href="FanZone.html">FanZone</a></li>
+                            <li class="nav-item dropdown"><a class="no-effect nav-link dropdown-toggle" href="#" id="contradaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extras</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="ca dropdown-item" href="Interviste.html">Interviste</a></li>
+                                    <li><a class="ca dropdown-item" href="RocciaMusic.html">Roccia Music</a></li>
+                                    <li><a class="dropdown-item" href="#">News</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="Accesso.html">Λccedi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Barra Ricerca -->
+                    <form class="d-flex mb-0">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Cerca..." aria-label="Cerca">
+                            <button class="btn btn-primary rounded-start-0" type="submit" style="font-family: 'Neue Haas Grotesk', sans-serif; font-weight: 600;">Cerca</button>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container-fluid">
+            <section class="section1 row align-items-center p-3">
+                <div class="col-md-5 text-center p-3">
+                    <img class="w-75 rounded shadow " src="Img/marracash.jpg" alt="Marracash">
+                </div>
+                <div class="col-md-7 mt-5 pt-3">
+                    <h2>Il Progetto</h2>
+                    <p>
+                        Il sito offre un'esperienza immersiva nell’universo di Marracash, tra musica, parole e
+                        stile. Dalla discografia completa agli album acquistabili, passando per i biglietti del tour
+                        e contenuti extra esclusivi, ogni sezione è pensata per vivere da vicino l’essenza
+                        dell’artista. Un design coinvolgente e una navigazione intuitiva accompagnano i fan in
+                        un viaggio autentico nel mondo del King del Rap.
+                    </p>
+                    <h2>Chi è Marracash?</h2>
+                    <p>
+                        Marracash, pseudonimo di
+                        <a id="modal1" href="#" data-bs-toggle="modal" data-bs-target="#FabioBartoloRizzo"><strong>Fabio Bartolo Rizzo</strong></a>,
+                        è un rapper e produttore discografico italiano nato il 22 maggio 1979 a Nicosia, in Sicilia.
+                        Cresciuto nel quartiere milanese della Barona, ha iniziato la sua carriera musicale nei primi
+                        anni 2000, emergendo nella scena hip hop underground italiana. È noto per la sua profondità lirica,
+                        la capacità di affrontare tematiche sociali e personali, e per l'innovazione musicale che ha portato
+                        nel panorama rap italiano.
+                    </p>
+                    <section class="text-center mb-3">
+                        <button id="scopri" class="btn btn-primary p-2" data-bs-toggle="modal" data-bs-target="#timelineModal">Scopri le tappe più importanti</button>
+                    </section>	
+                </div>
+            </section>
+
+            <!-- Modale Biografia Marracash -->
+            <div class="modal fade" id="FabioBartoloRizzo" tabindex="-1" aria-labelledby="FabioBartoloRizzo" aria-modal="true" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title" id="FabioBartoloRizzo" style="color: #7A0E0E; font-family: 'Neue Haas Grotesk', sans-serif; font-weight: 600;">Fabio Bartolo Rizzo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column align-items-center">
+                            <img src="Img/FabioBartoloRizzo.jpg" class="img-fluid rounded w-50 mb-3" alt="Foto di Fabio Bartolo Rizzo">
+                            <p style="font-family: 'Neue Haas Grotesk', sans-serif;">
+                                <span style="font-weight: 700;">Fabio Bartolo Rizzo</span>, noto come <span style="font-weight: 700;">Marracash</span>, è nato il 22 maggio 1979 a Nicosia, Sicilia, e cresciuto nel
+                                quartiere milanese della Barona. Figlio di un camionista e di una collaboratrice scolastica, ha vissuto un'infanzia segnata da difficoltà
+                                economiche, tra cui lo sfratto della famiglia quando aveva dieci anni. Queste esperienze hanno influenzato profondamente la sua visione
+                                del mondo e la sua musica.
+                                Il soprannome "Marracash" deriva da "marocchino", appellativo datogli da bambino a causa dei suoi tratti mediterranei. Ha scoperto di
+                                soffrire di una forma lieve di disturbo bipolare, tema che affronta apertamente nei suoi brani e interviste. In passato, ha vissuto una
+                                relazione tossica che ha avuto un impatto significativo sulla sua vita personale e artistica. Successivamente, ha avuto una relazione
+                                con la cantante Elodie dal 2019 al 2021.
+                                Marracash è noto per la sua profondità lirica e per la capacità di affrontare temi complessi come l'identità, la salute mentale e le
+                                dinamiche sociali e politiche, distinguendosi per un linguaggio ricercato e riflessivo. Nonostante il successo, è rimasto legato alle sue
+                                radici, continuando a vivere nella periferia milanese.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modale Timeline -->
+            <div class="modal fade" id="timelineModal" tabindex="-1" aria-labelledby="mappaModalLabel" aria-hidden="true" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="mappaModalLabel">Marracash, la sua Storia</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vRZOB_Zr8Jf3YZTkIxUFC6RpWTcAw62xfT3EB7l7JLsxvo_S2XtbowWzOFjnR0srgiQRkvDEGHetvTF&font=Georgia-Helvetica&lang=it&initial_zoom=1&width=100%25&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="m-5">
+                <h2 class="text-center mb-4">Contenuti in Evidenza!</h2>
+                <div id="carouselContenuti" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Album -->
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="Img/EFinitaLaPace.jpg" width="70%" class="img-fluid rounded shadow mx-auto d-block" alt="Album">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="px-4 text-center">
+                                        <h5>"E' Finita La Pace", il nuovo album di Marracash</h5>
+                                        <p>Marracash riflette sullo stato dell’Italia, le disuguaglianze, la sua carriera e la salute mentale, mantenendo il suo stile lirico tagliente e introspettivo</p>
+                                        <a href="EFinitaLaPace.html" class="btn btn-primary">Scopri di più</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sito Youtube -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="Img/CanaleMarra.jpg" width="100%" class="img-fluid rounded shadow mx-auto d-block" alt="Canale YouTube">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="px-4 text-center">
+                                        <h5>Canale YouTube Marracash</h5>
+                                        <p>Tutti i videoclip e interviste del King del Rap</p>
+                                        <a href="https://www.youtube.com/@Marracash" class="btn btn-primary">Visita</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Biglietti Tour -->
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <img src="Img/MarracashStadi.jpg" width="70%" class="img-fluid rounded shadow mx-auto d-block" alt="Acquista biglietti">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="px-4 text-center">
+                                        <h5>Marracash Tour Stadi 2025</h5>
+                                        <p>Un viaggio tra musica e emozioni, scopri il tour di Marracash!</p>
+                                        <a href="https://www.ticketone.it/artist/marracash/" class="btn btn-primary">Vedi Disponibilità</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CAROSELLO -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselContenuti" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Precedente</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselContenuti" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Successivo</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <section class="container-fluid text-light py-3 bg-dark">
+                <div class="text-center m-4">
+                    <img class="img-fluid" style="width: 10%;" src="Img/firma.png" alt="Firma Marracash">
+                </div>
+                <div class="row">
+                    <!-- DISCLAIMER -->
+                    <div class="col-md-6 mb-3 text-center">
+                        <p class="mb-2">
+                            Tutti i diritti relativi ai contenuti di questo sito, inclusi nomi, immagini, testi e altri materiali, 
+                            appartengono ai rispettivi autori e/o case editrici e sono protetti dalle leggi 
+                            internazionali sul copyright e sui marchi registrati.
+                        </p>
+                        <p class="mb-0">
+                            Questo progetto è di natura puramente amatoriale, privo di qualsiasi scopo di lucro da parte dell'autore e non affiliato nè dipendente da alcuna casa editrice.
+                        </p>
+                    </div>
+                    <!-- SOCIAL -->                                                                                     
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3">Seguici</h5>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    <!-- LINK -->
+                    <div class="col-md-3 mb-3 text-center">
+                        <h5 class="mb-3">Link Utili</h5>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Credits</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Web Project Plan</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a class="text-light" href="#">Informazioni</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
