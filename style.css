@@ -45,6 +45,9 @@ h2 {
 .nav-link:hover {
     color: #7A0E0E !important;
 }
+.nav-link.active {
+    color: black !important;
+}
 
 /* Stile Dropdown */
 .dropdown-menu {
@@ -68,6 +71,10 @@ h2 {
 .dropdown-item:not(.ca):hover {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+.dropdown-item.active {
+    background-color: #7A0E0E;
+    color: black !important;
 }
 
 /* Stile Hamburger */
