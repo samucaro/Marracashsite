@@ -215,3 +215,67 @@ h2 {
 .carousel-control-next-icon, .carousel-control-prev-icon {
     transform: scale(1.5);
 }
+
+/* Grassetti */
+.grassetto {
+    font-weight: 700;
+}
+
+/* Indice WebProjectPlan */
+.indice ol li {
+    color: #7A0E0E;
+    font-weight: bold;
+}
+.indice ol li ol li {
+    color: #7A0E0E;
+    font-weight: normal;
+}
+.indice ol li a {
+    color: black;
+    text-decoration: none;
+}
+.indice ol li a:hover {
+    color: #7A0E0E;
+}
+
+/* Sezioni WebProjectPlan */
+.swpp h2 {
+    color: #7A0E0E;
+}
+.swpp h3 {
+color: #7A0E0E;
+font-weight: normal;
+margin-left: 40px;
+}
+.swpp p {
+    margin-left: 40px;
+}
+.swpp .no-effect {
+    margin-left: 0px;
+}
+
+/* Stile list-grup WebProjectPlan */
+.list-group-wpp {
+    list-style-type: none;
+    margin-left: 40px;
+}
+.list-group-item-wpp {
+    background-color: white;
+    border: 1px solid #7A0E0E;
+    padding: 15px;
+}
+.list-group-item-wpp h4 {
+    color: #7A0E0E;
+    margin-bottom: 5px;
+}
+.list-group-item-wpp a {
+    color: #7A0E0E;
+    text-decoration: none;
+    font-weight: bold;
+}
+.list-group-item-wpp a:hover {
+    text-decoration: underline;
+}
+.list-group-item-wpp p {
+    margin: 5px 0;
+}

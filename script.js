@@ -11,124 +11,37 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Funzione per eseguire un'azione quando il documento è pronto
-function ready(fn) {
-    if (document.readyState != 'loading') {
-        fn();
-    } else {
-        document.addEventListener('DOMContentLoaded', fn);
-    }
-}
-
 // Imposta la lingua della pagina basandosi sui parametri dell'URL
 function setPageLanguage() {
-    var lang = window.location.href.match(/&lang=([a-zA-Z]*?)&?/);
-
-    if (lang) {
-        document.getElementsByTagName('html')[0].setAttribute('lang', lang[1]);
-    }
-
-}
-
-// Determina il percorso dell'embed della timeline basandosi sull'URL
-function computeEmbedPath() {
-    var trim_point = window.location.href.indexOf('embed/index.html');
-    if (trim_point > 0) {
-        return window.location.href.substring(0, trim_point); // supports https access via https://s3.amazonaws.com/cdn.knightlab.com/libs/timeline/latest/embed/index.html
-    }
-    return "https://cdn.knightlab.com/libs/timeline3/latest/";
-}
-
-// Aggiunge un tag oEmbed per supportare l'integrazione con altri servizi
-function addOembedTag() {
-    var oembed_link = document.createElement('link');
-    oembed_link['rel'] = 'alternate';
-    oembed_link['type'] = 'application/json+oembed';
-    oembed_link['href'] = 'https://oembed.knightlab.com/timeline/?url=' + encodeURIComponent(window.location.href);
-    document.head.appendChild(oembed_link);
-}
-
-// Crea un contenitore per l'embed della timeline
-function createEmbedDiv(containerId, width, height) {
-
-    if (typeof(width) != 'string' && typeof(width) != 'number') {
-        width = '100%'
-    }
-
-    if (typeof(height) != 'string' && typeof(height) != 'number') {
-        height = '100%'
-    }
-
-    // default containerId would be 'timeline-embed'
-    t = document.createElement('div');
-    t.style.position = 'relative';
-
-    te = document.getElementById(containerId);
-    te.appendChild(t);
-    te.classList.add("tl-timeline-embed");
-
-    if (width.toString().match("%")) {
-        te.style.width = width.split("%")[0] + "%";
-    } else {
-        width = Number(width) - 2;
-        te.style.width = (width) + 'px';
-    }
-
-    if (height.toString().match("%")) {
-        te.style.height = height;
-        te.classList.add("tl-timeline-full-embed");
-    } else if (width.toString().match("%")) {
-        te.classList.add("tl-timeline-full-embed");
-        height = Number(height) - 16;
-        te.style.height = (height) + 'px';
-    } else {
-        height = height - 16;
-        te.style.height = (height) + 'px';
-    }
-}
-
-// Estrae i parametri dall'URL e li restituisce come oggetto
-function optionsFromUrlParams() {
-    var param_str = window.location.href.slice(window.location.href.indexOf('?') + 1);
-
-    if (param_str.match('#')) {
-        param_str = param_str.split('#')[0];
-    }
-
-    param_str = param_str.split('&');
-
-    var url_vars = {}
-
-    for (var i = 0; i < param_str.length; i++) {
-        var uv = param_str[i].split('=');
-        url_vars[uv[0]] = uv[1];
-    }
-
-    return url_vars;
-};
-
-// Quando il documento è pronto, esegue diverse funzioni per configurare la timeline
-ready(function() {
-    setPageLanguage();
-    var embed_path = computeEmbedPath();
-    addOembedTag();
-
-    var options = optionsFromUrlParams();
-    createEmbedDiv('timeline-embed', options.width, options.height);
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang');
     
-    options.ga_measurement_id = 'G-LVEFKMG087'
-    if (typeof(options.source) == 'undefined') {
-        options.source = '1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk' // women in computing
+    if (lang) {
+        document.documentElement.setAttribute('lang', lang);
     }
+}
 
-    options.soundcite = true;
-
-    window.options = options
-    window.timeline = new TL.Timeline('timeline-embed', options.source, options)       
+let isNavbarInNewPosition = false;
+window.addEventListener("scroll", function() {
+    let navbarLinks = document.getElementById('navbar');
+    let distanza = navbarLinks.getBoundingClientRect();
+    if (distanza.top <= 0 && !isNavbarInNewPosition) {
+        console.log(distanza.top);
+        var header = document.getElementById('main-header');
+        header.removeChild(navbarLinks);
+        header.insertAdjacentElement('afterend', navbarLinks);
+        navbarLinks.style.backgroundColor = '#f6f5f1'
+        isNavbarInNewPosition = true;
+    }
+    else if (distanza.top > 0 && isNavbarInNewPosition) {
+        console.log(distanza.top);
+        console.log("ciao");
+        var div = this.document.getElementById('div-logo');
+        div.insertAdjacentElement('afterend', navbarLinks);
+        isNavbarInNewPosition = false;
+        navbarLinks.style.backgroundColor = 'transparent'
+    }
 });
-
-var myModal = new bootstrap.Modal(document.getElementById('mappaModal'));
-myModal.show();
 
 // Funzione per mostrare una categoria e nascondere le altre
 function showCategory(category) {

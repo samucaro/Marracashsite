@@ -21,8 +21,8 @@
     </head>
 
     <body>
-        <header>
-            <div class="container-fluid bg-none">
+        <header id="main-header">
+            <div id="div-logo" class="container-fluid bg-none m-0">
                 <div class="row">
                     <div class="col-sm-12 justify-content-center text-center">
                         <div class="logo-container p-5">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top p-3">
                 <div class="container-fluid">
                     <!-- Logo -->
                     <h2 class="mb-0"><a class="navbar-brand" style="color: #7A0E0E;" href="index.html">MΛRRΛCΛ$H</a></h2>
@@ -72,7 +72,7 @@
 
         <nav class="m-3" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="Marracashsite.html">Home</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Web Project Plan</li>
             </ol>
         </nav>
@@ -97,31 +97,34 @@
                             <li><a href="#concorrenti">Analisi dei concorrenti</a></li>
                         </ol>
                     </li>
-                    <li><a href="#struttura">Struttura</a></li>
+                    <li><a href="#struttura">Struttura</a>
                         <ol>
                             <li><a href="#mappa">Mappa Concettuale</a></li>
-                            <li><a href="#dipendenza">Schema delle dipendenze</a></li>
+                            <li><a href="#dipendenze">Schema delle dipendenze</a></li>
                             <li><a href="#categorie">Categorie descrittive</a></li>
                         </ol>
+                    </li>
                     <li><a href="#wireframes">Wireframes</a></li>
-                    <li><a href="#usabilita">Usabilità</a></li>
+                    <li><a href="#usabilita">Usabilità</a>
                         <ol>
-                            <li><a href="#archiettura">Norme di usabilità per l'architettura</a></li>
+                            <li><a href="#architettura">Norme di usabilità per l'architettura</a></li>
                             <li><a href="#tipografia">Norme di usabilità per l'aspetto e la tipografia</a></li>
                             <li><a href="#aspetto">Norme di usabilità per colori, font e icone</a></li>
                         </ol>
-                    <li><a href="#servizi">Servizi</a></li>
+                    </li>
+                    <li><a href="#servizi">Servizi</a>
                         <ol>
                             <li><a href="#browsing">Sistemi di browsing per valorizzare</a></li>
                             <li><a href="#utilities">Utilities e tool per l'interazione</a></li>
                             <li><a href="#futuro">Sviluppi futuri</a></li>
                         </ol>
-                    <li><a href="#bibliografia">Bibliografia</a></li>
+                    </li>
+                    <li><a href="#bibliografia">Bibliografia/Sitografia</a></li>
                 </ol>
             </div>
             
             <!--IDEA-->
-            <section id="idea">
+            <section class="swpp" id="idea">
                 <h2>1. Idea</h2>
                 <p>
                     Il progetto consiste nella realizzazione di una piattaforma web dedicata a Marracash. L’idea
@@ -139,7 +142,7 @@
             </section>
             
             <!--BRIEF-->
-            <section id="brief">
+            <section class="swpp" id="brief">
                 <h2>2. Brief</h2>
                 <section id="finalita">
                     <h3><span class="numero">2.1</span> Finalità</h3>
@@ -150,7 +153,7 @@
                         tra l'artista e i suoi sostenitori garantendo un'esperienza a 360° nel mondo del King del Rap.
                     </p>
                 </section>
-                <section id="pubblico">
+                <section class="swpp" id="pubblico">
                     <h3><span class="numero">2.2</span> Pubblico</h3>
                     <p>
                         Il sito è destinato ai fan di Marracash di tutte le età e non solo, anche ad appassionati di musica
@@ -161,7 +164,7 @@
                         attivamente alla community attraverso commenti, discussioni, foto, dediche e molto altro.
                     </p>
                 </section>
-                <section id="accesso">
+                <section class="swpp" id="accesso">
                     <h3><span class="numero">2.3</span> Accesso</h3>
                     <p>
                         La piattaforma sarà responsive, garantendo una navigazione fluida su desktop, tablet
@@ -171,7 +174,7 @@
                         accesso immediato alle informazioni senza rallentamenti.
                     </p>
                 </section>
-                <section id="contenuti">
+                <section class="swpp" id="contenuti">
                     <h3><span class="numero">2.4</span> Contenuti e dati</h3>
                     <p>
                         Il sito conterrà la discografia completa di Marracash, con album, testi e contenuti
@@ -186,9 +189,9 @@
             </section>
             
             <!--BENCHMARK-->
-            <section id="benchmark">
+            <section class="swpp" id="benchmark">
                 <h2>3. Benchmark</h2>
-                <section id="mercato">
+                <section class="swpp" id="mercato">
                     <h3><span class="numero">3.1</span> Analisi di mercato</h3>
                     <p>
                         Attualmente non esistono siti ufficiali completi dedicati a Marracash: le informazioni
@@ -202,101 +205,133 @@
                         quindi distinguersi per cura editoriale, profondità dei contenuti e coinvolgimento del pubblico.
                     </p>
                 </section>
-                <section id="concorrenti">
+                <section class="swpp" id="concorrenti">
                     <h3><span class="numero">3.2</span> Analisi dei concorrenti</h3>
-                    <p></p><ul class="list-group">
-                      <li class="list-group-item">
-                        <h4>Wikipedia</h4>
-                        <p><a href="https://it.wikipedia.org/wiki/Marracash" target="_blank">https://it.wikipedia.org/wiki/Marracash</a></p>
-                        <p><strong>Descrizione:</strong> Classica wiki del personaggio che lo sviscera in gran parte delle sue sfaccettature, integrando la biografia e tutta la discografia ad oggi disponibile.</p>
-                        <p><strong>Punti di forza:</strong> Il contenuto è in gran parte affidabile e verificato e gli aggiornamenti sono regolari.</p>
-                        <p><strong>Limiti:</strong> Non offre un'esperienza utente in grado di immergerlo nel mondo di Marracash, rimane molto distaccata e informativa.</p>
-                      </li>
-                    
-                      <li class="list-group-item">
-                        <h4>Canali social ufficiali</h4>
-                        <p><a href="https://www.instagram.com/kingmarracash/?hl=it" target="_blank">https://www.instagram.com/kingmarracash/?hl=it</a></p>
-                        <p><strong>Descrizione:</strong> Classici canali social ufficiali dell'artista, gestiti dallo staff e da Marracash stesso.</p>
-                        <p><strong>Punti di forza:</strong> Autentici e fortemente coinvolgenti per tutti i fan, oltre ad essere giornalmente attivi e prime fonti di informazioni su eventi e nuova musica.</p>
-                        <p><strong>Limiti:</strong> Sono pur sempre social network in cui non sempre l'utente è in grado di interagire con l'artista e la discografia è molto confusionaria e molto promozionale.</p>
-                      </li>
-                    
-                      <li class="list-group-item">
-                        <h4>Spotify</h4>
-                        <p><a href="https://open.spotify.com/artist/5AZuEF0feCXMkUCwQiQlW7" target="_blank">hhttps://open.spotify.com/artist/5AZuEF0feCXMkUCwQiQlW7</a></p>
-                        <p><strong>Descrizione:</strong> Sito verificato che contiene tutti i file audio e multimediali dell'artista</p>
-                        <p><strong>Punti di forza:</strong> Questa è la collezione più affidabile e verificata che si possa trovare per ascoltare, vedere e informarsi riguardo tutta la discografia di Marracash</p>
-                        <p><strong>Limiti:</strong> Il focus è esclusivamente sulla discografia, con poche informazioni bibliografiche e riguardanti il merchandising. I fan possono solo ascoltare e salvare la musica.</p>
-                      </li>
+                    <ul class="list-group-wpp">
+                        <li class="list-group-item-wpp">
+                            <h4>Wikipedia</h4>
+                            <p><a href="https://it.wikipedia.org/wiki/Marracash" target="_blank">https://it.wikipedia.org/wiki/Marracash</a></p>
+                            <p><strong>Descrizione:</strong> Classica wiki del personaggio che lo sviscera in gran parte delle sue sfaccettature, integrando la biografia e tutta la discografia ad oggi disponibile.</p>
+                            <p><strong>Punti di forza:</strong> Il contenuto è in gran parte affidabile e verificato e gli aggiornamenti sono regolari.</p>
+                            <p><strong>Limiti:</strong> Non offre un'esperienza utente in grado di immergerlo nel mondo di Marracash, rimane molto distaccata e informativa.</p>
+                        </li>
+                        <li class="list-group-item-wpp">
+                            <h4>Canali social ufficiali</h4>
+                            <p><a href="https://www.instagram.com/kingmarracash/?hl=it" target="_blank">https://www.instagram.com/kingmarracash/?hl=it</a></p>
+                            <p><strong>Descrizione:</strong> Classici canali social ufficiali dell'artista, gestiti dallo staff e da Marracash stesso.</p>
+                            <p><strong>Punti di forza:</strong> Autentici e fortemente coinvolgenti per tutti i fan, oltre ad essere giornalmente attivi e prime fonti di informazioni su eventi e nuova musica.</p>
+                            <p><strong>Limiti:</strong> Sono pur sempre social network in cui non sempre l'utente è in grado di interagire con l'artista e la discografia è molto confusionaria e molto promozionale.</p>
+                        </li>
+                        <li class="list-group-item-wpp">
+                            <h4>Spotify</h4>
+                            <p><a href="https://open.spotify.com/artist/5AZuEF0feCXMkUCwQiQlW7" target="_blank">https://open.spotify.com/artist/5AZuEF0feCXMkUCwQiQlW7</a></p>
+                            <p><strong>Descrizione:</strong> Sito verificato che contiene tutti i file audio e multimediali dell'artista</p>
+                            <p><strong>Punti di forza:</strong> Questa è la collezione più affidabile e verificata che si possa trovare per ascoltare, vedere e informarsi riguardo tutta la discografia di Marracash</p>
+                            <p><strong>Limiti:</strong> Il focus è esclusivamente sulla discografia, con poche informazioni bibliografiche e riguardanti il merchandising. I fan possono solo ascoltare e salvare la musica.</p>
+                        </li>
 
-                      <li class="list-group-item">
-                        <h4>Fan Base e altri siti</h4>
-                        <p><a href="https://rockdream.it/artisti-italiani/marracash" target="_blank">https://rockdream.it/artisti-italiani/marracash</a></p>
-                        <p>
-                            <strong>Descrizione:</strong> Siti gestiti dai fan che permettono la condivisione di contenuti, notizie e aggiornamenti su Marracash.<br>
-                            Ci sono poi i vari siti di merchandising ufficiale o di ticketing.
-                        </p>
-                        <p><strong>Punti di forza:</strong> Possibilità di interazione con la community e aggiornamenti costanti sui nuovi eventi e uscite musicali. Oltre alla possibilità di acquistare biglietti e/o merchandising.</p>
-                        <p><strong>Limiti:</strong> Sono molto di nicchia, non sempre aggiornati e talvolta confusionari. Non offrono un'esperienza completa a 360° su tutto il mondo di Marracash.</p>
-                      </li>
+                        <li class="list-group-item-wpp">
+                            <h4>Fan Base e altri siti</h4>
+                            <p><a href="https://rockdream.it/artisti-italiani/marracash" target="_blank">https://rockdream.it/artisti-italiani/marracash</a></p>
+                            <p>
+                                <strong>Descrizione:</strong> Siti gestiti dai fan che permettono la condivisione di contenuti, notizie e aggiornamenti su Marracash.<br>
+                                Ci sono poi i vari siti di merchandising ufficiale o di ticketing.
+                            </p>
+                            <p><strong>Punti di forza:</strong> Possibilità di interazione con la community e aggiornamenti costanti sui nuovi eventi e uscite musicali. Oltre alla possibilità di acquistare biglietti e/o merchandising.</p>
+                            <p><strong>Limiti:</strong> Sono molto di nicchia, non sempre aggiornati e talvolta confusionari. Non offrono un'esperienza completa a 360° su tutto il mondo di Marracash.</p>
+                        </li>
                     </ul>
                 </section>
             </section>
             
             <!--STRUTTURA-->
-            <section id="struttura">
+            <section class="swpp mt-4" id="struttura">
                 <h2>4. Struttura</h2>
-                <p></p><section id="mappa">
+                <section class="swpp" id="mappa">
                     <h3><span class="numero">4.1</span> Mappa Concettuale</h3>
-                    <p><img src="Img/MarracashsiteMap.drawio.png" class="d-block mx-auto rounded w-75 h-auto" alt="Mappa concettuale">
-                    </p><p>Il progetto è organizzato in quattro sezioni principali: <strong>Film, Collezioni, Curiosità e Personaggi.</strong><br>
-                         La sezione dei film offre un'esperienza di esplorazione dell'universo di Barbie in modo intuitivo, 
-                         grazie a filtri avanzati che consentono di ordinare i contenuti per data, interessi e categorie specifiche. <br>
-                         Le curiosità approfondiscono vari ambiti, tra cui musica, letteratura e giochi. <br>
-                         Le collezioni sono suddivise secondo le categorie principali e le più iconiche, 
-                         mentre i personaggi sono classificati in base al loro ruolo all'interno dell'universo di Barbie.</p> 
-                    <p></p>
+                    <img src="Img/MarracashsiteMap.drawio.png" class="d-block mx-auto w-75 m-4" alt="Mappa concettuale">
+                    <p>
+                        Il progetto è organizzato in quattro sezioni principali: <span class="grassetto">Discografia, Merch, Extras e FanZone.</span><br>
+                        La sezione della Discografia permette di esplorare l’intera produzione musicale di Marracash in modo semplice e coinvolgente, grazie alla possibilità di organizzare
+                        i contenuti per uscita tipo, streams, tematiche, nome e durata.<br>
+                        La sezione Merch propone collezioni ufficiali e limited edition legate all’immaginario visivo dell’artista, con aggiornamenti periodici e focus su prodotti speciali.<br>
+                        In Extras si trovano materiali esclusivi come interviste, video, news e contenuti legati a Roccia Music, per approfondire il mondo che ruota attorno a Marracash.<br>
+                        La FanZone, infine, è uno spazio pensato per la community, dove i fan possono registrarsi, interagire e accedere a contenuti personalizzati ed esperienze dedicate. 
+                    </p>
                 </section>
-                <section id="dipendenze">
+                <section class="swpp" id="dipendenze">
                     <h3><span class="numero">4.2</span> Schema delle dipendenze</h3>
-                    <p><img src="images\Dipendeze.png" class="d-block mx-auto rounded w-75 h-auto" alt="Schema delle dipendenze">
-                    </p><p>La homepage rappresenta il punto di accesso principale al sito e permette una navigazione immediata verso le quattro categorie principali:<br> 
-                        <strong>Film:</strong> Catalogo completo con informazioni dettagliate su ogni film, inclusi titolo, autore, data di pubblicazione, durata e formato di distribuzione.<br>
-                        <strong>Collezioni:</strong> Elenco delle collezioni più famose con descrizioni dettagliate e sinossi di ogni episodio.<br>
-                        <strong>Curiosità:</strong> Area dedicata alle ultime novità dal mondo di Barbie, con aggiornamenti su vari ambiti e settori.<br>
-                        <strong>Personaggi:</strong> Sezione dedicata ai protagonisti e antagonisti del mondo di Barbie, con informazioni dettagliate.<br>
-                        <strong>Accesso Utente:</strong> Pagina dedicata agli utenti registrati, dove possono salvare i loro contenuti preferiti, creare liste personalizzate e gestire le impostazioni del proprio profilo.</p>
-                    <p></p>
+                    <img src="Img/SchemaDipendenze.png" class="d-block mx-auto w-75 m-4" alt="Schema delle dipendenze">
+                    <p>
+                        La <span class="grassetto">Homepage</span> rappresenta il punto di accesso principale al sito e permette una navigazione immediata verso le quattro categorie principali:<br> 
+                        <span class="grassetto">Discografia:</span> Catalogo completo con informazioni dettagliate su ogni Album o Singolo di Marracash, inclusi i metadati con titolo, artista, data di pubblicazione, durata, tracce se è un album, genere, etichetta, produttore e formati.<br>
+                        <span class="grassetto">Merch(andising):</span> Catalogo di tutto il merchandising ufficiale e verificato di Marracash. Partendo dai dischi e i vinili originali, all'abbigliamento di ogni tipo, passando per sciarpe dei tour, accessori e persino poster.<br>
+                        <span class="grassetto">Extras:</span> Area dedicata ad approfondimenti da vero fan del mondo di Marracash, con interviste di ogni genere, all'iconica etichetta di produzione Roccia Music, fino ad aggiornamenti costanti su titti gli eventi in cui Marrracash partecipa.<br>
+                        <span class="grassetto">FanZone:</span> Sezione dedicata esclusivamente ai fan all'interno della quale possono interagire tra loro riguardo varie tematiche disponibili.<br>
+                        <span class="grassetto">Accesso Utente:</span> Pagina dedicata agli utenti registrati, dove possono salvare i loro contenuti preferiti, creare liste personalizzate, gestire le impostazioni del proprio profilo e partecipare poi alla FanZone.
+                    </p>
                 </section>
-                <section id="contenuti">
+                <section class="swpp" id="categorie">
                     <h3><span class="numero">4.3</span> Categorie descrittive</h3>
-                    <p>Di seguito un esempio di scheda tecnica relativa al film d'animazione <i>Barbie - La principessa e la povera</i></p>
-                    <p></p><ul class="list-group">
-                      <li class="list-group-item">
-                        <p><strong>Titolo:</strong> Barbie - La principessa e la povera</p>
-                        <p><strong>Uscita:</strong> 28 settembre 2004</p>
-                        <p><strong>Durata:</strong> 85 minuti</p>
-                        <p><strong>Regista:</strong> William Lau</p>
-                        <p><strong>Genere:</strong> Sentimentale, Commedia</p>
-                        <p><strong>Studio:</strong> Mattel Entertainment</p>
-                        <p><strong>Colonna Sonora:</strong> Arnie Roth</p>
-                        <p><strong>Lingua originale:</strong> Inglese</p>
-                        <p><strong>Paese:</strong> Stati Uniti D'America</p>
-                        <p><strong>Formato di distribuzione:</strong> DVD, Blu-ray, VHS</p>
-                        <p><strong>Pubblico consigliato:</strong> Dai 5 anni in su</p>
-                        <p><strong>Trama:</strong> Un'avventura di scambi di identità tra la principessa Annalisa e la povera
-                        Erika che si incontrarono per caso e scoprirono di essere identiche. 
-                        Per sfuggire alle trame di un malvagio consigliere, decidono di scambiarsi
-                        i ruoli. Tra intrighi e travestimenti, le due giovani dovranno unire le
-                        forze per proteggere il regno e scoprire la verità. Un'avventura che
-                        mescola musica, amicizia e coraggio, dove il destino di entrambe si
-                        intreccia in un inaspettato scambio di vita.</p>
-                      </li><p></p>
-                </ul></section><p></p>
+                    <p>Di seguito un esempio di scheda tecnica relativa all'album più iconico di Marracash <i>Persona</i></p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p><strong>Titolo:</strong> Persona</p>
+                            <p><strong>Uscita:</strong> 31 Ottobre 2019</p>
+                            <p><strong>Durata:</strong> 50:52 minuti</p>
+                            <p><strong>Dischi:</strong> 1</p>
+                            <p><strong>Tracce:</strong> 15</p>
+                            <p><strong>Genere:</strong> Alternative hip hop, Conscious hip hop</p>
+                            <p><strong>Etichetta:</strong> Island</p>
+                            <p><strong>Lingua originale:</strong> Inglese</p>
+                            <p><strong>Produttore:</strong> Marz, Low Kidd, TY1, Zef, Dardust, Charlie Charles, Demo Casanova, Rashaad Wiggins, Big Fish</p>
+                            <p><strong>Registrazione:</strong> Roccia HQ Studio, Milano (Italia)</p>
+                            <p><strong>Formato di distribuzione:</strong> DVD, Blu-ray, VHS</p>
+                            <p><strong>Formati:</strong> CD, 2 LP, download digitale, streaming</p>
+                            <p>
+                                <strong>Track List:</strong>
+                                1. Body Parts - I denti - 2:36<br>
+                                2. Qualcosa in cui credere - Lo scheletro (feat. Gué Pequeno) - 3:32<br>
+                                3. Quelli che non pensano - Il cervello (feat. Coez) - 3:10<br>
+                                4. Appartengo - Il sangue (feat. Massimo Pericolo) - 4:15<br>
+                                5. Poco di buono - Il fegato - 3:05<br>
+                                6. Bravi a cadere - I polmoni - 3:20<br>
+                                7. Non sono Marra - La pelle (feat. Mahmood) - 3:08<br>
+                                8. Supreme - L'ego (feat. Tha Supreme, Sfera Ebbasta) - 3:43<br>
+                                9. Sport - I muscoli (feat. Luchè) - 3:22<br>
+                                10. Da buttare - Il ca**o - 3:24<br>
+                                11. Crudelia - I nervi - 3:50<br>
+                                12. G.O.A.T - Il cuore - 3:30<br>
+                                13. Madame - L'anima (feat. Madame) - 3:41<br>
+                                14. Tutto questo niente - Gli occhi - 3:30<br>
+                                15. Greta Thunberg - Lo stomaco (feat. Cosmo) - 2:46
+                            </p>
+                            <p>
+                                <strong>Tematiche: </strong>
+                                Persona è un album che ha segnato una svolta profonda nel panorama musicale italiano, distinguendosi
+                                per la sua intensità emotiva e la sua struttura concettuale unica. Ogni traccia rappresenta una parte
+                                del corpo umano, creando un viaggio introspettivo attraverso le esperienze personali dell'artista.
+                                Questo lavoro è stato acclamato dalla critica per la sua capacità di esplorare tematiche complesse come
+                                la salute mentale, le relazioni e l'identità personale, offrendo un ritratto sincero e potente
+                                dell'essere umano. La sua profondità e autenticità lo rendono un ascolto imprescindibile per chi cerca
+                                musica che vada oltre la superficie.
+                            </p>
+                            <p>
+                                <strong>Riconoscimenti: </strong>
+                                Album più venduto del 2020 in Italia secondo la classifica FIMI.<br>
+                                8 Dischi di Platino in Italia, con oltre 400.000 copie vendute.<br>
+                                Tutti i brani dell'album hanno ottenuto certificazioni:<br>
+                                Triplo Platino per "Crudelia - I nervi" e "Supreme - L'ego" (feat. tha Supreme e Sfera Ebbasta).<br>
+                                Doppio Platino per "Bravi a Cadere - I polmoni" e "Madame - L’anima" (feat. Madame).<br>
+                                Platino per "Body Parts - I denti" e "Qualcosa in cui Credere - Lo scheletro" (feat. Guè Pequeno).
+                            </p>
+                        </li>
+                    </ul>
+                </section>
             </section>
             
             <!--WIREFRAMES-->
-            <section id="wireframes">
+            <section class="swpp mt-4" id="wireframes">
                 <h2>5. Wireframes</h2>
                 <p>Questa sezione mostra la rappresentazione grafica delle pagine principali e della loro struttura.</p>
                 <div id="wireframeCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
@@ -310,33 +345,33 @@
                         <button type="button" data-bs-target="#wireframeCarousel" data-bs-slide-to="6" class="active" aria-current="true"></button>
                     </div>
                     <div class="carousel-inner text-center">
-                        <div class="carousel-item">
+                        <div class="carousel-item active">
                             <h4 class="mb-3">Homepage</h4>
-                            <img src="images\G-Homepage.png" class="d-block mx-auto rounded w-75 h-auto" alt="Wireframe Homepage">
+                            <img src="Img/HomepageWirefreams.jpg" class="d-block mx-auto w-25" alt="Wireframe Homepage">
                         </div>
                         <div class="carousel-item">
-                            <h4 class="mb-3">Film</h4>
-                            <img src="images\G-Film.png" class="d-block mx-auto rounded w-75 h-auto" alt="Wireframe Film">
+                            <h4 class="mb-3">Discografia</h4>
+                            <img src="Img/DiscografiaWireframe.jpg" class="d-block mx-auto w-25" alt="Wireframe Discografia">
                         </div>
                         <div class="carousel-item">
                             <h4 class="mb-3">Item</h4>
-                            <img src="images\G-Item.png" class="d-block mx-auto rounded w-75 h-auto" alt="Wireframe Item">
+                            <img src="Img/ItemWireframe.jpg" class="d-block mx-auto w-25" alt="Wireframe Item">
                         </div>
                         <div class="carousel-item">
                             <h4 class="mb-3">Collezioni</h4>
-                            <img src="images\G-Collezioni.png" class="d-block mx-auto rounded w-75 h-auto" alt="Wireframe Collezioni">
+                            <img src="Img/MerchWireframe.jpg" class="d-block mx-auto w-25" alt="Wireframe merchandising">
                         </div>
                         <div class="carousel-item">
-                            <h4 class="mb-3">Novità</h4>
-                            <img src="images\G-Novità.png" class="d-block mx-auto rounded w-75 h-auto" alt="Wireframe Novità">
+                            <h4 class="mb-3">FanZone</h4>
+                            <img src="Img/FanZoneWireframe.jpg" class="d-block mx-auto w-25" alt="Wireframe FanZone">
                         </div>
-                        <div class="carousel-item active carousel-item-start">
-                            <h4 class="mb-3">Personaggi</h4>
-                            <img src="images\G-Personaggi.png" class="d-block mx-auto rounded w-75 h-auto" alt="Wireframe Personaggi">
+                        <div class="carousel-item">
+                            <h4 class="mb-3">Interviste</h4>
+                            <img src="Img/IntervisteWireframe.jpg" class="d-block mx-auto w-25" alt="Wireframe Interviste">
                         </div>
-                        <div class="carousel-item carousel-item-next carousel-item-start">
+                        <div class="carousel-item">
                             <h4 class="mb-3">Accesso</h4>
-                            <img src="images\G-Accesso.png" class="d-block mx-auto rounded w-75 h-auto" alt="Wireframe Accesso">
+                            <img src="Img/AccediWireframe.jpg" class="d-block mx-auto w-25" alt="Wireframe Accesso">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#wireframeCarousel" data-bs-slide="prev">
@@ -351,84 +386,112 @@
             </section>
             
             <!--USABILITA'-->
-            <section id="architettura">
+            <section class="swpp mt-4" id="usabilita">
                 <h2>6. Usabilità</h2>
-                <p></p><h3><span class="numero">6.1</span> Norme di usabilità per l'architettura</h3>
-                    <p>La navbar è ancorata in alto e rimane visibile durante lo scorrimento,
-                    migliorando la navigazione. Le pagine sono organizzate in sezioni ben distinte,
-                    con un layout chiaro che rende l'esperienza utente fluida. Le breadcrumbs sono 
-                    presenti in tutte le pagine, eccetto la home, per semplificare la navigazione e 
-                    facilitare il ritorno alla home. Il design responsivo, ottenuto grazie a Bootstrap,
-                    assicura una visualizzazione ottimale su dispositivi di diverse dimensioni, 
-                    sfruttando il grid system per mantenere l'ordine e la chiarezza anche su schermi mobili.</p>
+                <section class="swpp" id="architettura">
+                    <h3><span class="numero">6.1</span> Norme di usabilità per l'architettura</h3>
+                    <p>
+                        La struttura del sito è pensata per offrire un'esperienza di navigazione semplice
+                        e immediata. La navbar fissa garantisce un accesso costante alle quattro sezioni principali,
+                        mentre la presenza di breadcrumb nelle sottopagine aiuta l’utente a orientarsi facilmente
+                        all’interno del sito. Il layout, sviluppato con Bootstrap, è completamente responsive,
+                        adattandosi fluidamente a tutti i dispositivi. L’organizzazione in griglie e blocchi ben
+                        definiti migliora la leggibilità e rende la fruizione dei contenuti ordinata e intuitiva.
+                    </p>
                 </section>
-                <section id="tipografia">
+                <section class="swpp" id="tipografia">
                     <h3><span class="numero">6.2</span> Norme di usabilità per l'aspetto e la tipografia</h3>
-                    <p>Per l'aspetto tipografico, ho scelto uno stile essenziale ma raffinato, prestando 
-                    attenzione ai dettagli. Il font principale è Rubik, mentre i testi sono neri per garantire 
-                    una lettura chiara su uno sfondo sfumato di bianco ghiaccio. Gli elementi interattivi,
-                    come link e pulsanti, sono evidenziati con effetti hover, migliorando l'interazione e 
-                    facilitando la navigazione.</p>
+                    <p>
+                        Per l’aspetto visivo ho scelto uno stile pulito ma deciso, in linea con l’identità di Marracash.
+                        La palette si basa su toni scuri, con sfondi neri e dettagli in bianco e rosso, che richiamano
+                        l’estetica urbana e intensa dell’artista. La tipografia principale è Neue Haas Grotesk, moderna
+                        e leggibile, utilizzata con pesi diversi per creare gerarchie visive chiare. I testi scuri
+                        su sfondo crema assicurano un’elevata leggibilità, mentre gli elementi interattivi, come link
+                        e pulsanti, sono evidenziati con effetti hover e cambi di colore che rafforzano l’usabilità e
+                        guidano l’interazione dell’utente.
+                    </p>
                 </section>
-                <section id="aspetto">
+                <section class="swpp" id="aspetto">
                     <h3><span class="numero">6.3</span> Norme di usabilità per colori, font e icone</h3>
-                    <p>I colori principali del sito sono sfumature di rosa, fucsia, grigio e nero,
-                    scelti con cura tramite il sito <a href="https://color.adobe.com/it/create/color-wheel" target="_blank">Adobe Color</a>  
-                    per richiamare il brand e i colori iconici di Barbie. Il font Rubik, selezionato 
-                    dalla libreria Google Fonts, conferisce uno stile moderno e leggibile. Le icone
-                    di Bootstrap sono integrate per migliorare l'accessibilità e la comunicazione 
-                    visiva, offrendo un'esperienza utente più fluida e chiara.</p><p></p>
+                    <p>
+                        I colori principali del sito sono sfumature di nero, grigio antracite e rosso scuro,
+                        con accenti bianchi, selezionati tramite il sito <a href="https://color.adobe.com/it/create/color-wheel" target="_blank">Adobe Color</a>
+                        per riflettere il tono deciso e introspettivo del brand Marracash. Il font Neue Haas Grotesk,
+                        scelto dalla libreria Google Fonts, garantisce uno stile contemporaneo e facilmente leggibile,
+                        adatto sia ai titoli che ai testi descrittivi. Le icone di Bootstrap sono integrate in modo
+                        essenziale per guidare l’utente all’interno del sito, migliorando la navigazione e mantenendo
+                        coerenza visiva in tutte le sezioni.
+                    </p>
             </section>
             
             <!--SERVIZI-->
-            <section id="browsing">
+            <section class="swpp" id="servizi">
                 <h2>7. Servizi</h2>
-                <p></p><h3><span class="numero">7.1</span> Sistemi di browsing per valorizzare</h3>
-                    <p>Il catalogo del sito offre una varietà di strumenti avanzati che permettono 
-                    di navigare e esplorare i contenuti in modo semplice e intuitivo.<br> 
-                    Gli utenti possono filtrare i contenuti in base a: <br> 
-                    <b>Film</b>: Ricerca avanzata con filtri per data di uscita, regista, genere, durata e morale.<br>
-                    <b>Collezioni</b>: Suddivise per categorie più rilevanti.<br>
-                    <b>Curiosità</b>: Classificate in base all'area di interesse da esplorare, come musica, letteratura o giochi.<br>
-                    <b>Personaggi</b>: Organizzati per il ruolo che ricoprono (protagonisti, antagonisti, secondari, aiutanti, familiarimagici, nobili e persone comuni).<br></p>
+                <section class="swpp" id="browsing">
+                    <h3><span class="numero">7.1</span> Sistemi di browsing per valorizzare</h3>
+                    <p>
+                        Il catalogo del sito integra una serie di strumenti di navigazione pensati per
+                        valorizzare i contenuti e offrire un'esperienza utente semplice e funzionale.<br>
+                        Gli utenti possono filtrare ed esplorare i contenuti in base a diverse categorie:<br>
+                        <span class="grassetto">Discografia</span>: All'interno della quale l'utente può trovare sia Album che Brani.<br>
+                        <span class="grassetto">Album</span>: Ordinabili per data di uscita, titolo, collaborazioni e genere musicale.<br>
+                        <span class="grassetto">Brani</span>: Ricercabili per titolo, tema, album di provenienza e featuring.<br>
+                        <span class="grassetto">Merch(andising)</span>: Suddiviso per categoria (vinili e cd, abbigliamento, accessori, edizioni limitate) e collezione ufficiale.<br>
+                        <span class="grassetto">Extras</span>: Classificati per tipologia interviste (con contenuti video e articoli), approfondimenti, in particolare su Roccia Music
+                        e con una sezione dedicata alla News più recenti.<br>
+                        <span class="grassetto">FanZone</span>: Personalizzata in base all’utente, con accesso rapido ai contenuti esclusivi e attività a cui si è iscritti favorendo
+                        l'interazione con gli altri fan della comunity e l'artista stesso.
+                    </p>
                 </section>
-                <section id="utilities">
+                <section class="swpp" id="utilities">
                     <h3><span class="numero">7.2</span> Utilities e tool per l'interazione</h3>
-                    <p>Il sito offre una serie di funzionalità interattive pensate per ottimizzare 
-                    l'esperienza dell'utente: <br>
-                        <b>Bottoni:</b> Pulsanti interattivi cambiano aspetto al passaggio del mouse, indicando chiaramente la loro funzionalità.<br>
-                        <b>Accordion:</b> Permettono di nascondere o espandere le sezioni di contenuto, come i filtri di ricerca, per un'organizzazione più ordinata.<br>
-                        <b>Carousel:</b>: Consente di esplorare i contenuti in modo dinamico, con slide dedicate a personaggi e contenuti in primo piano.<br>
-                        <b>Modali:</b> Finestre pop-up che offrono informazioni aggiuntive, richiedono conferme per azioni o mostrano anteprime di contenuti.<br>
-                        <b>Tooltips:</b> Visibili al passaggio del mouse sui link, forniscono spiegazioni su cosa accadrà al cliccare.<br>
-                        <b>Navbar Sticky:</b> La barra di navigazione rimane visibile in cima alla pagina per un rapido accesso a tutte le sezioni.<br>
-                        <b>Pagination:</b> Utilizzata nelle sezioni con molti contenuti per facilitare la navigazione e migliorare i tempi di caricamento delle pagine.&lt;&gt;
-                </p></section>
-                <section id="futuro">
+                    <p>
+                        Il sito integra una serie di funzionalità interattive pensate per migliorare l’esperienza utente:<br>
+                        <span class="grassetto">Bottoni:</span> Pulsanti dinamici che cambiano aspetto al passaggio del cursore, rendendo immediata la comprensione della loro funzione.<br>
+                        <span class="grassetto">Accordion:</span> Consentono di espandere o comprimere sezioni di contenuto, come i filtri, per una visualizzazione più ordinata e compatta.<br>
+                        <span class="grassetto">Carousel:</span> Strumenti a scorrimento che permettono di visualizzare contenuti in evidenza, come album o novità, in maniera fluida e dinamica.<br>
+                        <span class="grassetto">Modali:</span> Finestra pop-up che mostrano informazioni extra, conferme per azioni o anteprime di contenuti senza cambiare pagina.<br>
+                        <span class="grassetto">Tooltips:</span> Brevi descrizioni che appaiono al passaggio del mouse su elementi interattivi, chiarendo l’azione che verrà eseguita.<br>
+                        <span class="grassetto">Navbar Sticky:</span> La barra di navigazione resta fissa in alto durante lo scorrimento, per garantire accesso rapido alle sezioni principali.<br>
+                        <span class="grassetto">Pagination:</span> Implementata nelle pagine con molti elementi, consente una consultazione più fluida e migliora i tempi di caricamento.
+                    </p>
+                </section>
+                <section class="swpp" id="futuro">
                     <h3><span class="numero">7.3</span> Sviluppi futuri</h3>
-                    <p>In futuro, il sito potrebbe essere arricchito con nuove funzionalità 
-                    per rendere l'esperienza utente ancora più coinvolgente:<br>
-                    <b>Aggiornamenti recenti:</b> Le collezioni di bambole saranno sempre aggiornate con le ultime novità. <br>
-                    <b>Area Community:</b> Una sezione dedicata ai forum o ai commenti, dove gli appassionati possono condividere idee, dare opinioni o discutere su temi legati al mondo delle bambole. <br>
-                    <b>Database ampliato:</b> Approfondimenti su curiosità, novità e edizioni limitate, per offrire agli utenti contenuti esclusivi e dettagliati.</p><p></p>
+                    <p>
+                        In futuro, il sito potrebbe essere arricchito con nuove funzionalità
+                        per rendere l'esperienza utente ancora più coinvolgente:<br>
+                        <b>Eventi live streaming:</b> Trasmissioni esclusive di performance,
+                        interviste e sessioni Q&A, per un contatto diretto con Marracash.<br>
+                        <b>Area FanZone potenziata:</b> Una sezione interattiva per contest creativi,
+                        dove i fan possono vincere premi e vedere il loro contenuto pubblicato.<br>
+                        <b>Contenuti esclusivi:</b> Una zona riservata agli utenti premium con accesso
+                        a brani inediti, anteprime e dietro le quinte.
+                    </p>
             </section>
             
             <!--BIBLIOGRAFIA-->
-            <section id="bibliografia">
+            <section class="swpp" id="bibliografia">
                 <h2>8. Bibliografia/Sitografia</h2>
-                <p> Mappa concettuale e schema realizzati con <a href="https://app.diagrams.net/" target="_blank">Diagrams.net</a><br>
-                Wireframes creati con <a href="https://balsamiq.com/" target="_blank">Balsamiq Wireframes</a><br>
-                Immagini modificate con <a href="https://www.photopea.com/" target="_blank">Photopea</a><br>
-                Sito pubblicato con <a href="https://pages.github.com/" target="_blank">GitHub Pages</a><br>
-                Logo modificato con <a href="https://www.textstudio.com/" target="_blank">TextStudio</a><br>
-                Font utilizzato: <i>Rubik</i> da <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br>
-                Codice sviluppato con Visual Studio Code. <br></p>
-                <p><b>Testi e Immagini</b><br>
-                <b>Immagini:</b> Le immagini presenti sul sito provengono da fonti ufficiali e accessibili al pubblico, raffigurando personaggi e simboli dell'universo di Barbie. <br>
-                <b>Testi:</b> Tutti i testi sono stati scritti manualmente e accuratamente verificati attraverso fonti attendibili.</p>
-                <p><b>Fonti per il layout e la struttura</b><br>
-                Per la progettazione e la struttura del sito, ho seguito gli insegnamenti della Prof.ssa Francesca Tomasi, tratti dalle slide del corso di Informatica Umanistica su <a href="https://virtuale.unibo.it/course/view.php?id=65675" target="_blank">Virtuale</a>.<br>
-                Inoltre, ho preso come riferimento il sito di esempio <a href="https://alessandro-rocchi.github.io/progetto_dylan_dog_rocchi_alessandro/index.html" target="_blank">"Progetto Dylan Dog" di Alessandro Rocchi</a> per la progettazione.</p><p></p>
+                <ul>
+                    <li style="font-weight: 100;">Mappa concettuale e schema realizzati con <a href="https://www.drawio.com/" target="_blank">Drawio</a></li>
+                    <li style="font-weight: 100;">Wireframes creati con <a href="https://balsamiq.com/" target="_blank">Balsamiq Wireframes</a></li>
+                    <li style="font-weight: 100;">Immagini modificate con <a href="https://www.photopea.com/" target="_blank">Photopea</a></li>
+                    <li style="font-weight: 100;">Sito pubblicato con <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></li>
+                    <li style="font-weight: 100;">Logo modificato con <a href="https://www.textstudio.com/" target="_blank">TextStudio</a></li>
+                    <li style="font-weight: 100;">Font utilizzato: <i>Neue Haas Grotesk</i> da <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                    <li style="font-weight: 100;">Codice sviluppato con Visual Studio Code.</li>
+                </ul>
+                <p class="no-effect">
+                    <span class="grassetto">Testi e Immagini</span><br>
+                    <span class="grassetto">Immagini:</span> Le immagini presenti sul sito provengono da fonti ufficiali e accessibili al pubblico, raffigurando l'artista e i simboli dell'universo del King del Rap. <br>
+                    <span class="grassetto">Testi:</span> Tutti i testi sono stati scritti manualmente e accuratamente verificati attraverso fonti attendibili.
+                </p>
+                <p class="no-effect">
+                    <span class="grassetto">Fonti per il layout e la struttura</span><br>
+                    Per la progettazione e la struttura del sito, ho seguito gli insegnamenti della Prof.ssa Francesca Tomasi, tratti dalle slide del corso di Informatica Umanistica su <a href="https://virtuale.unibo.it/course/view.php?id=65675" target="_blank">Virtuale</a>.<br>
+                    Inoltre, ho preso come riferimento il sito di esempio <a href="https://alessandro-rocchi.github.io/progetto_dylan_dog_rocchi_alessandro/index.html" target="_blank">"Progetto Dylan Dog" di Alessandro Rocchi</a> per la progettazione.
+                </p>
             </section>
         </div>
 
